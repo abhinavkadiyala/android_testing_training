@@ -8,4 +8,42 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Basic progress bar properties -->
+    <style name="BasicProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!--Photo Blowup progress bar-->
+    <style name="PhotoBlowupProgressBar" parent="BasicProgressBar">
+        <!--Current values reflect default in Android Styles-->
+        <item name="android:minWidth">76dp</item>
+        <item name="android:maxWidth">76dp</item>
+        <item name="android:minHeight">76dp</item>
+        <item name="android:maxHeight">76dp</item>
+    </style>
+
+    <!--Album thumbnails progress bar-->
+    <style name="AlbumThumbnailProgressBar" parent="BasicProgressBar">
+
+        <!--Current values reflect default in Android Styles-->
+        <item name="android:minWidth">16dp</item>
+        <item name="android:maxWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <style name="StandardTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    Common to NetworkImages
+    <style name="BasicImageView">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
 </resources>
